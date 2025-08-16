@@ -1,4 +1,4 @@
-import db from './db.jsf';
+import db from './db.js';
 
 export async function addExpense({ date, description, amount, category }) {
   const [result] = await db.query(
